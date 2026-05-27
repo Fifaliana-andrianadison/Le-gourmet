@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="team.title">Chef & Équipe — Le Gourmet</title>
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="alternate" hreflang="fr" href="/fr/team.html" />
+  <link rel="alternate" hreflang="en" href="/en/team.html" />
+  <link rel="alternate" hreflang="mg" href="/mg/team.html" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/fr/index.html" class="logo">
+        <img src="/img/logo.svg" alt="Le Gourmet" />
+        <span>Le Gourmet</span>
+      </a>
+      <ul>
+        <li><a href="/fr/index.html"><i class="fa-solid fa-house"></i> <span data-i18n="nav.home">Accueil</span></a></li>
+        <li><a href="/fr/about.html"><i class="fa-solid fa-utensils"></i> <span data-i18n="nav.about">À propos</span></a></li>
+        <li><a href="/fr/menu.html"><i class="fa-solid fa-book-open"></i> <span data-i18n="nav.menu">Notre Carte</span></a></li>
+        <li><a href="/fr/gallery.html"><i class="fa-solid fa-images"></i> <span data-i18n="nav.gallery">Galerie</span></a></li>
+        <li><a href="/fr/blog.html"><i class="fa-solid fa-pen-nib"></i> <span data-i18n="nav.blog">Blog</span></a></li>
+        <li><a href="/fr/contact.html"><i class="fa-solid fa-envelope"></i> <span data-i18n="nav.contact">Contact</span></a></li>
+      </ul>
+      <div class="lang-selector">
+        <button class="lang-selector-btn" onclick="toggleLangDropdown()"><img class="flag-icon" src="https://flagcdn.com/w40/fr.png" alt="Français" /> Français <span class="arrow">▼</span></button>
+        <div class="lang-dropdown">
+          <button onclick="switchLang('fr')" data-lang="fr"><img class="flag-icon" src="https://flagcdn.com/w40/fr.png" alt="Français" /> Français</button>
+          <button onclick="switchLang('en')" data-lang="en"><img class="flag-icon" src="https://flagcdn.com/w40/gb.png" alt="English" /> English</button>
+          <button onclick="switchLang('mg')" data-lang="mg"><img class="flag-icon" src="https://flagcdn.com/w40/mg.png" alt="Malagasy" /> Malagasy</button>
+        </div>
+      </div>
+      <button class="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-sun"></i></button>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-team">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <h1 data-i18n="team.hero_title">Notre équipe</h1>
+        <p data-i18n="team.hero_subtitle">Des passionnés de gastronomie à votre service.</p>
+      </div>
+    </section>
+
+    <section class="team-section container">
+      <div class="section-header reveal-up">
+        <h2 data-i18n="team.hero_title">Notre équipe</h2>
+      </div>
+      <div class="team-grid">
+        <div class="card team-member">
+          <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=300&h=300&fit=crop&crop=face" alt="" class="avatar" />
+          <h3 data-i18n="team.member_1_name">Chef Andry Rakoto</h3>
+          <p class="role" data-i18n="team.member_1_role">Chef exécutif & Fondateur</p>
+        </div>
+        <div class="card team-member">
+          <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=300&h=300&fit=crop&crop=face" alt="" class="avatar" />
+          <h3 data-i18n="team.member_2_name">Marie Rabe</h3>
+          <p class="role" data-i18n="team.member_2_role">Chef pâtissière</p>
+        </div>
+        <div class="card team-member">
+          <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=300&h=300&fit=crop&crop=face" alt="" class="avatar" />
+          <h3 data-i18n="team.member_3_name">Luc Nirina</h3>
+          <p class="role" data-i18n="team.member_3_role">Sommelier</p>
+        </div>
+        <div class="card team-member">
+          <img src="https://images.unsplash.com/photo-1595273670150-bd0c3c392e46?w=300&h=300&fit=crop&crop=face" alt="" class="avatar" />
+          <h3 data-i18n="team.member_4_name">Sophie Andria</h3>
+          <p class="role" data-i18n="team.member_4_role">Chef de salle</p>
+        </div>
+        <div class="card team-member">
+          <img src="https://images.unsplash.com/photo-1581299894007-aaa50297cf16?w=300&h=300&fit=crop&crop=face" alt="" class="avatar" />
+          <h3 data-i18n="team.member_5_name">Pierre Bernard</h3>
+          <p class="role" data-i18n="team.member_5_role">Sous-chef</p>
+        </div>
+        <div class="card team-member">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&crop=face" alt="" class="avatar" />
+          <h3 data-i18n="team.member_6_name">Claire Raso</h3>
+          <p class="role" data-i18n="team.member_6_role">Responsable accueil</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="coworking-section">
+      <div class="container">
+        <div class="coworking-layout">
+          <div class="coworking-info">
+            <h2 data-i18n="team.coworking_title">Notre environnement de travail</h2>
+            <p data-i18n="team.coworking_desc">Chez Le Gourmet, nous croyons qu'un cadre de travail exceptionnel est la clé d'une cuisine exceptionnelle.</p>
+          </div>
+          <div class="coworking-gallery">
+            <div class="coworking-img coworking-img--wide">
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=400&fit=crop" alt="" data-i18n="team.coworking_img_2_alt" />
+              <div class="coworking-overlay">
+                <i class="fa-solid fa-utensils"></i>
+                <span data-i18n="team.coworking_img_2_alt">Salle à manger élégante</span>
+              </div>
+            </div>
+            <div class="coworking-img-row">
+              <div class="coworking-img">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=400&h=300&fit=crop" alt="" data-i18n="team.coworking_img_1_alt" />
+                <div class="coworking-overlay">
+                  <i class="fa-solid fa-kitchen-set"></i>
+                  <span data-i18n="team.coworking_img_1_alt">Cuisine moderne</span>
+                </div>
+              </div>
+              <div class="coworking-img">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300&fit=crop" alt="" data-i18n="team.coworking_img_3_alt" />
+                <div class="coworking-overlay">
+                  <i class="fa-solid fa-fire"></i>
+                  <span data-i18n="team.coworking_img_3_alt">Équipe en action</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content container">
+      <div class="footer-links"><h4 data-i18n="footer.company">Le Gourmet</h4><p data-i18n="footer.description">Restaurant gastronomique au cœur d'Antananarivo.</p></div>
+      <div class="footer-links"><h4 data-i18n="footer.nav_link">Navigation</h4><a href="/fr/about.html" data-i18n="nav.about">À propos</a><a href="/fr/menu.html" data-i18n="nav.menu">Notre Carte</a><a href="/fr/gallery.html" data-i18n="nav.gallery">Galerie</a><a href="/fr/blog.html" data-i18n="nav.blog">Blog</a></div>
+      <div class="footer-links"><h4 data-i18n="footer.plus_link">Plus</h4><a href="/fr/contact.html" data-i18n="nav.contact">Contact</a><a href="/fr/faq.html" data-i18n="nav.faq">FAQ</a><a href="/fr/team.html" data-i18n="nav.team">Chef & Équipe</a><a href="/fr/pricing.html" data-i18n="nav.pricing">Formules</a><a href="/fr/legal.html" data-i18n="nav.legal">Mentions légales</a></div>
+      <div class="footer-links"><h4 data-i18n="footer.follow_us">Suivez-nous</h4><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a><a href="#"><i class="fa-brands fa-tripadvisor"></i> TripAdvisor</a></div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2025 Le Gourmet. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+      <a href="/fr/legal.html" data-i18n="nav.legal">Mentions légales</a>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js?v=5"></script>
+  <script src="/js/main.js?v=5"></script>
+</body>
+</html>

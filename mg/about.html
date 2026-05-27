@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="about.title">Ã€ propos â€” Le Gourmet</title>
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="alternate" hreflang="mg" href="/mg/about.html" />
+  <link rel="alternate" hreflang="en" href="/en/about.html" />
+  <link rel="alternate" hreflang="mg" href="/mg/about.html" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/mg/index.html" class="logo">
+        <img src="/img/logo.svg" alt="Le Gourmet" />
+        <span>Le Gourmet</span>
+      </a>
+      <ul>
+        <li><a href="/mg/index.html"><i class="fa-solid fa-house"></i> <span data-i18n="nav.home">Accueil</span></a></li>
+        <li><a href="/mg/about.html" class="active"><i class="fa-solid fa-utensils"></i> <span data-i18n="nav.about">Ã€ propos</span></a></li>
+        <li><a href="/mg/menu.html"><i class="fa-solid fa-book-open"></i> <span data-i18n="nav.menu">Notre Carte</span></a></li>
+        <li><a href="/mg/gallery.html"><i class="fa-solid fa-images"></i> <span data-i18n="nav.gallery">Galerie</span></a></li>
+        <li><a href="/mg/blog.html"><i class="fa-solid fa-pen-nib"></i> <span data-i18n="nav.blog">Blog</span></a></li>
+        <li><a href="/mg/contact.html"><i class="fa-solid fa-envelope"></i> <span data-i18n="nav.contact">Contact</span></a></li>
+      </ul>
+      <div class="lang-selector">
+        <button class="lang-selector-btn" onclick="toggleLangDropdown()"><img class="flag-icon" src="https://flagcdn.com/w40/mg.png" alt="Malagasy" /> Malagasy <span class="arrow">â–¼</span></button>
+        <div class="lang-dropdown">
+          <button onclick="switchLang('mg')" data-lang="mg"><img class="flag-icon" src="https://flagcdn.com/w40/mg.png" alt="Malagasy" /> Malagasy</button>
+          <button onclick="switchLang('en')" data-lang="en"><img class="flag-icon" src="https://flagcdn.com/w40/gb.png" alt="English" /> English</button>
+          <button onclick="switchLang('mg')" data-lang="mg"><img class="flag-icon" src="https://flagcdn.com/w40/mg.png" alt="Malagasy" /> Malagasy</button>
+        </div>
+      </div>
+      <button class="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-sun"></i></button>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-about">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <h1 data-i18n="about.hero_title">Notre histoire</h1>
+        <p data-i18n="about.hero_subtitle">Depuis 2009, nous sublimons les saveurs de Madagascar.</p>
+      </div>
+    </section>
+
+    <section class="about-content container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 data-i18n="about.history_title">Notre histoire</h2>
+          <p data-i18n="about.history_text">FondÃ© en 2009 par le Chef Andry Rakoto, Le Gourmet est nÃ© d'une passion : marier la gastronomie Malagasye aux saveurs authentiques de Madagascar. SituÃ© au cÅ“ur d'Antananarivo, notre restaurant propose une cuisine raffinÃ©e dans un cadre Ã©lÃ©gant et chaleureux. Chaque plat raconte l'histoire d'un terroir exceptionnel, sublimÃ© par le savoir-faire de notre brigade.</p>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=600&h=400&fit=crop" alt="Le Gourmet restaurant" />
+        </div>
+      </div>
+    </section>
+
+<section class="values-chart-section container">
+      <div class="section-header reveal-up">
+        <h2 data-i18n="about.values_title">Ny hasiny</h2>
+      </div>
+      <div class="chart-bars">
+        <div class="chart-bar-item" data-value="95">
+          <div class="chart-bar-label">
+            <i class="fa-solid fa-seedling"></i>
+            <span data-i18n="about.value_1_title">Vokatra eo an-toerana</span>
+          </div>
+          <div class="chart-bar-track">
+            <div class="chart-bar-fill" style="--width: 95%"></div>
+          </div>
+          <span class="chart-bar-value">95%</span>
+        </div>
+        <div class="chart-bar-item" data-value="92">
+          <div class="chart-bar-label">
+            <i class="fa-solid fa-award"></i>
+            <span data-i18n="about.value_2_title">Tenim-pahaizana</span>
+          </div>
+          <div class="chart-bar-track">
+            <div class="chart-bar-fill" style="--width: 92%"></div>
+          </div>
+          <span class="chart-bar-value">92%</span>
+        </div>
+        <div class="chart-bar-item" data-value="98">
+          <div class="chart-bar-label">
+            <i class="fa-solid fa-heart"></i>
+            <span data-i18n="about.value_3_title">Fandraisana</span>
+          </div>
+          <div class="chart-bar-track">
+            <div class="chart-bar-fill" style="--width: 98%"></div>
+          </div>
+          <span class="chart-bar-value">98%</span>
+        </div>
+        <div class="chart-bar-item" data-value="85">
+          <div class="chart-bar-label">
+            <i class="fa-solid fa-leaf"></i>
+            <span data-i18n="about.value_4_title">Faharetana</span>
+          </div>
+          <div class="chart-bar-track">
+            <div class="chart-bar-fill" style="--width: 85%"></div>
+          </div>
+          <span class="chart-bar-value">85%</span>
+        </div>
+        <div class="chart-bar-item" data-value="90">
+          <div class="chart-bar-label">
+            <i class="fa-solid fa-handshake"></i>
+            <span data-i18n="about.value_5_title">Fanoloran-tena</span>
+          </div>
+          <div class="chart-bar-track">
+            <div class="chart-bar-fill" style="--width: 90%"></div>
+          </div>
+          <span class="chart-bar-value">90%</span>
+        </div>
+        <div class="chart-bar-item" data-value="96">
+          <div class="chart-bar-label">
+            <i class="fa-solid fa-star"></i>
+            <span data-i18n="about.value_6_title">Kalitao</span>
+          </div>
+          <div class="chart-bar-track">
+            <div class="chart-bar-fill" style="--width: 96%"></div>
+          </div>
+          <span class="chart-bar-value">96%</span>
+        </div>
+        <div class="chart-bar-item" data-value="93">
+          <div class="chart-bar-label">
+            <i class="fa-solid fa-gem"></i>
+            <span data-i18n="about.value_7_title">Fitiavana</span>
+          </div>
+          <div class="chart-bar-track">
+            <div class="chart-bar-fill" style="--width: 93%"></div>
+          </div>
+          <span class="chart-bar-value">93%</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-restaurant-section">
+      <div class="container">
+        <div class="about-restaurant-grid">
+          <div class="about-restaurant-text">
+            <h2 data-i18n="about.restaurant_title">Ny tontolo sy ny rivo-piainana</h2>
+            <p data-i18n="about.restaurant_desc">Ao afovoan'i Antananarivo, Le Gourmet dia mandray anareo amin'ny tontolo kanto sy mafana. Ny efitrano fisakafoana lehibe, feno hazavana voajanahary, dia afaka mandray olona 60.</p>
+          </div>
+          <div class="about-restaurant-image">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&h=500&fit=crop" alt="Le Gourmet restaurant" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content container">
+      <div class="footer-links"><h4 data-i18n="footer.company">Le Gourmet</h4><p data-i18n="footer.description">Restaurant gastronomique au cÅ“ur d'Antananarivo.</p></div>
+      <div class="footer-links"><h4 data-i18n="footer.nav_link">Navigation</h4><a href="/mg/about.html" data-i18n="nav.about">Ã€ propos</a><a href="/mg/menu.html" data-i18n="nav.menu">Notre Carte</a><a href="/mg/gallery.html" data-i18n="nav.gallery">Galerie</a><a href="/mg/blog.html" data-i18n="nav.blog">Blog</a></div>
+      <div class="footer-links"><h4 data-i18n="footer.plus_link">Plus</h4><a href="/mg/contact.html" data-i18n="nav.contact">Contact</a><a href="/mg/faq.html" data-i18n="nav.faq">FAQ</a><a href="/mg/team.html" data-i18n="nav.team">Chef & Ã‰quipe</a><a href="/mg/pricing.html" data-i18n="nav.pricing">Formules</a><a href="/mg/legal.html" data-i18n="nav.legal">Mentions lÃ©gales</a></div>
+      <div class="footer-links"><h4 data-i18n="footer.follow_us">Suivez-nous</h4><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a><a href="#"><i class="fa-brands fa-tripadvisor"></i> TripAdvisor</a></div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2025 Le Gourmet. <span data-i18n="footer.rights">Tous droits rÃ©servÃ©s.</span></p>
+      <a href="/mg/legal.html" data-i18n="nav.legal">Mentions lÃ©gales</a>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js?v=5"></script>
+  <script src="/js/main.js?v=5"></script>
+</body>
+</html>

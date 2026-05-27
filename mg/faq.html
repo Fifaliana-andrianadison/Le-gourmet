@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="faq.title">FAQ — Le Gourmet</title>
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="alternate" hreflang="fr" href="/fr/faq.html" />
+  <link rel="alternate" hreflang="en" href="/en/faq.html" />
+  <link rel="alternate" hreflang="mg" href="/mg/faq.html" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/mg/index.html" class="logo">
+        <img src="/img/logo.svg" alt="Le Gourmet" />
+        <span>Le Gourmet</span>
+      </a>
+      <ul>
+        <li><a href="/mg/index.html"><i class="fa-solid fa-house"></i> <span data-i18n="nav.home">Accueil</span></a></li>
+        <li><a href="/mg/about.html"><i class="fa-solid fa-utensils"></i> <span data-i18n="nav.about">À propos</span></a></li>
+        <li><a href="/mg/menu.html"><i class="fa-solid fa-book-open"></i> <span data-i18n="nav.menu">Notre Carte</span></a></li>
+        <li><a href="/mg/gallery.html"><i class="fa-solid fa-images"></i> <span data-i18n="nav.gallery">Galerie</span></a></li>
+        <li><a href="/mg/blog.html"><i class="fa-solid fa-pen-nib"></i> <span data-i18n="nav.blog">Blog</span></a></li>
+        <li><a href="/mg/contact.html"><i class="fa-solid fa-envelope"></i> <span data-i18n="nav.contact">Contact</span></a></li>
+      </ul>
+      <div class="lang-selector">
+        <button class="lang-selector-btn" onclick="toggleLangDropdown()"><img class="flag-icon" src="https://flagcdn.com/w40/mg.png" alt="Malagasy" /> Malagasy <span class="arrow">▼</span></button>
+        <div class="lang-dropdown">
+          <button onclick="switchLang('fr')" data-lang="mg"><img class="flag-icon" src="https://flagcdn.com/w40/mg.png" alt="Malagasy" /> Français</button>
+          <button onclick="switchLang('en')" data-lang="en"><img class="flag-icon" src="https://flagcdn.com/w40/gb.png" alt="English" /> English</button>
+          <button onclick="switchLang('mg')" data-lang="mg"><img class="flag-icon" src="https://flagcdn.com/w40/mg.png" alt="Malagasy" /> Malagasy</button>
+        </div>
+      </div>
+      <button class="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-sun"></i></button>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-faq">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <h1 data-i18n="faq.hero_title">Questions fréquentes</h1>
+        <p data-i18n="faq.hero_subtitle">Tout ce que vous devez savoir.</p>
+      </div>
+    </section>
+
+    <section class="faq-section container">
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question"><span data-i18n="faq.q1">Faut-il réserver à l'avance ?</span><i class="fa-solid fa-chevron-down"></i></button>
+          <div class="faq-answer"><p data-i18n="faq.a1">Nous recommandons de réserver au moins 24h à l'avance, surtout le week-end. Pour les groupes de plus de 6 personnes, 48h sont conseillées.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><span data-i18n="faq.q2">Proposez-vous des menus végétariens ?</span><i class="fa-solid fa-chevron-down"></i></button>
+          <div class="faq-answer"><p data-i18n="faq.a2">Oui, nous proposons des options végétariennes et véganes sur demande. N'hésitez pas à nous informer de vos préférences lors de la réservation.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><span data-i18n="faq.q3">Quels sont vos horaires d'ouverture ?</span><i class="fa-solid fa-chevron-down"></i></button>
+          <div class="faq-answer"><p data-i18n="faq.a3">Nous sommes ouverts du mardi au dimanche : déjeuner de 12h à 14h30 et dîner de 19h à 22h30. Fermé le lundi.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><span data-i18n="faq.q4">Organisez-vous des événements privés ?</span><i class="fa-solid fa-chevron-down"></i></button>
+          <div class="faq-answer"><p data-i18n="faq.a4">Oui, notre salle privée peut accueillir jusqu'à 30 personnes pour vos événements : anniversaires, repas d'affaires, célébrations.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question"><span data-i18n="faq.q5">Acceptez-vous les cartes bancaires ?</span><i class="fa-solid fa-chevron-down"></i></button>
+          <div class="faq-answer"><p data-i18n="faq.a5">Nous acceptons les cartes Visa et Mastercard ainsi que les paiements en Ariary et en euros.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content container">
+      <div class="footer-links"><h4 data-i18n="footer.company">Le Gourmet</h4><p data-i18n="footer.description">Restaurant gastronomique au cœur d'Antananarivo.</p></div>
+      <div class="footer-links"><h4 data-i18n="footer.nav_link">Navigation</h4><a href="/mg/about.html" data-i18n="nav.about">À propos</a><a href="/mg/menu.html" data-i18n="nav.menu">Notre Carte</a><a href="/mg/gallery.html" data-i18n="nav.gallery">Galerie</a><a href="/mg/blog.html" data-i18n="nav.blog">Blog</a></div>
+      <div class="footer-links"><h4 data-i18n="footer.plus_link">Plus</h4><a href="/mg/contact.html" data-i18n="nav.contact">Contact</a><a href="/mg/faq.html" data-i18n="nav.faq">FAQ</a><a href="/mg/team.html" data-i18n="nav.team">Chef & Équipe</a><a href="/mg/pricing.html" data-i18n="nav.pricing">Formules</a><a href="/mg/legal.html" data-i18n="nav.legal">Mentions légales</a></div>
+      <div class="footer-links"><h4 data-i18n="footer.follow_us">Suivez-nous</h4><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a><a href="#"><i class="fa-brands fa-tripadvisor"></i> TripAdvisor</a></div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2025 Le Gourmet. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
+      <a href="/mg/legal.html" data-i18n="nav.legal">Mentions légales</a>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js?v=5"></script>
+  <script src="/js/main.js?v=5"></script>
+</body>
+</html>

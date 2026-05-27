@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="mg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="blog.title">Blog — Le Gourmet</title>
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="alternate" hreflang="fr" href="/fr/article.html" />
+  <link rel="alternate" hreflang="en" href="/en/article.html" />
+  <link rel="alternate" hreflang="mg" href="/mg/article.html" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/mg/index.html" class="logo">
+        <img src="/img/logo.svg" alt="Le Gourmet" />
+        <span>Le Gourmet</span>
+      </a>
+      <ul>
+        <li><a href="/mg/index.html"><i class="fa-solid fa-house"></i> <span data-i18n="nav.home">Trano</span></a></li>
+        <li><a href="/mg/about.html"><i class="fa-solid fa-utensils"></i> <span data-i18n="nav.about">Momba anay</span></a></li>
+        <li><a href="/mg/menu.html"><i class="fa-solid fa-book-open"></i> <span data-i18n="nav.menu">Ny Sakafonay</span></a></li>
+        <li><a href="/mg/gallery.html"><i class="fa-solid fa-images"></i> <span data-i18n="nav.gallery">Sary</span></a></li>
+        <li><a href="/mg/blog.html" class="active"><i class="fa-solid fa-pen-nib"></i> <span data-i18n="nav.blog">Blog</span></a></li>
+        <li><a href="/mg/contact.html"><i class="fa-solid fa-envelope"></i> <span data-i18n="nav.contact">Fifandraisana</span></a></li>
+      </ul>
+      <div class="lang-selector">
+        <button class="lang-selector-btn" onclick="toggleLangDropdown()"><img class="flag-icon" src="https://flagcdn.com/w40/mg.png" alt="Malagasy" /> Malagasy <span class="arrow">▼</span></button>
+        <div class="lang-dropdown">
+          <button onclick="switchLang('fr')" data-lang="fr"><img class="flag-icon" src="https://flagcdn.com/w40/fr.png" alt="Français" /> Français</button>
+          <button onclick="switchLang('en')" data-lang="en"><img class="flag-icon" src="https://flagcdn.com/w40/gb.png" alt="English" /> English</button>
+          <button onclick="switchLang('mg')" data-lang="mg"><img class="flag-icon" src="https://flagcdn.com/w40/mg.png" alt="Malagasy" /> Malagasy</button>
+        </div>
+      </div>
+      <button class="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-sun"></i></button>
+      <button class="menu-toggle" aria-label="Menu">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="article-hero container" id="article-header">
+      <a href="blog.html" class="btn btn-sm btn-outline" data-i18n="article.back_to_blog">← Hiverina any amin'ny blog</a>
+      <h1 id="article-title">Tsy hita ny lahatsoratra</h1>
+      <p class="article-meta"><i class="fa-regular fa-calendar"></i> <span id="article-date"></span></p>
+    </section>
+    <section class="container" id="article-image-section" style="display:none;">
+      <img id="article-image" class="article-featured-image" src="" alt="" />
+    </section>
+    <section class="article-body container" id="article-body"></section>
+    <section class="container">
+      <div class="article-nav">
+        <a id="article-prev" href="#" class="btn btn-sm btn-outline">&larr; <span data-i18n="article.prev_article">Lahatsoratra teo aloha</span></a>
+        <a href="blog.html" class="btn btn-sm btn-outline" data-i18n="article.back_to_blog">← Hiverina any amin'ny blog</a>
+        <a id="article-next" href="#" class="btn btn-sm btn-outline"><span data-i18n="article.next_article">Lahatsoratra manaraka</span> &rarr;</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content container">
+      <div class="footer-links"><h4 data-i18n="footer.company">Le Gourmet</h4><p data-i18n="footer.description">Trano fisakafoanana tsara any afovoan'i Antananarivo.</p></div>
+      <div class="footer-links"><h4 data-i18n="footer.nav_link">Navigation</h4><a href="/mg/about.html" data-i18n="nav.about">Momba anay</a><a href="/mg/menu.html" data-i18n="nav.menu">Ny Sakafonay</a><a href="/mg/gallery.html" data-i18n="nav.gallery">Sary</a><a href="/mg/blog.html" data-i18n="nav.blog">Blog</a></div>
+      <div class="footer-links"><h4 data-i18n="footer.plus_link">Bebe kokoa</h4><a href="/mg/contact.html" data-i18n="nav.contact">Fifandraisana</a><a href="/mg/faq.html" data-i18n="nav.faq">FAQ</a><a href="/mg/team.html" data-i18n="nav.team">Lehizokary & Ekipa</a><a href="/mg/pricing.html" data-i18n="nav.pricing">Vidiny</a><a href="/mg/legal.html" data-i18n="nav.legal">Fampandrenesana ara-dalàna</a></div>
+      <div class="footer-links"><h4 data-i18n="footer.follow_us">Araho izahay</h4><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a><a href="#"><i class="fa-brands fa-tripadvisor"></i> TripAdvisor</a></div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2025 Le Gourmet. <span data-i18n="footer.rights">Zo rehetra voatokana.</span></p>
+      <a href="/mg/legal.html" data-i18n="nav.legal">Fampandrenesana ara-dalàna</a>
+    </div>
+  </footer>
+
+  <script src="/js/i18n.js?v=5"></script>
+  <script src="/js/main.js?v=5"></script>
+</body>
+</html>
