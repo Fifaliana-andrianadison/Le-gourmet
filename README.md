@@ -1,8 +1,3 @@
-
-# AGENTS.md
-
-## Project
-
 Static multilingual restaurant website (FR / EN / MG) — vanilla HTML, CSS, JavaScript only. No frameworks, no npm dependencies.
 
 ## Key constraints
